@@ -13,7 +13,7 @@ const forcast = (latitude, longitude, callback) => {
         }
         else {
 
-            callback(undefined, response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' degrees out .The wind speed is ' + response.body.current.wind_speed)
+            callback(undefined, response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees out and the humidity is ' + response.body.current.humidity + '%')
         }
     })
 }
